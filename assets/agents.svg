@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+    <path id="e1" d="M140,140 Q260,50 380,80"/>
+    <path id="e2" d="M140,140 Q260,230 380,200"/>
+    <path id="e3" d="M380,80 Q540,40 700,140"/>
+    <path id="e4" d="M380,200 Q540,240 700,140"/>
+  </defs>
+
+  <rect width="900" height="260" rx="16" fill="url(#bg)" stroke="#30363d"/>
+  <text x="450" y="36" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#58a6ff">Agentes trabajando en conjunto</text>
+
+  <!-- Conexiones -->
+  <g fill="none" stroke="#30363d" stroke-width="2" stroke-dasharray="6 6">
+    <use href="#e1"/>
+    <use href="#e2"/>
+    <use href="#e3"/>
+    <use href="#e4"/>
+  </g>
+
+  <!-- Nodos -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="14" text-anchor="middle">
+    <circle cx="140" cy="140" r="24" fill="#21262d" stroke="#58a6ff" stroke-width="2"/>
+    <text x="140" y="180" fill="#c9d1d9">Planner</text>
+
+    <circle cx="380" cy="80" r="24" fill="#21262d" stroke="#3fb950" stroke-width="2"/>
+    <text x="380" y="120" fill="#c9d1d9">Coder</text>
+
+    <circle cx="380" cy="200" r="24" fill="#21262d" stroke="#d29922" stroke-width="2"/>
+    <text x="380" y="240" fill="#c9d1d9">Tester</text>
+
+    <circle cx="700" cy="140" r="24" fill="#21262d" stroke="#f778ba" stroke-width="2"/>
+    <text x="700" y="180" fill="#c9d1d9">Deploy</text>
+  </g>
+
+  <!-- Agentes en movimiento (puntos que recorren las conexiones) -->
+  <circle r="6" fill="#58a6ff">
+    <animateMotion dur="4s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion>
+  </circle>
+  <circle r="6" fill="#3fb950">
+    <animateMotion dur="4s" begin="-2s" repeatCount="indefinite"><mpath href="#e3"/></animateMotion>
+  </circle>
+  <circle r="6" fill="#d29922">
+    <animateMotion dur="3.5s" repeatCount="indefinite"><mpath href="#e2"/></animateMotion>
+  </circle>
+  <circle r="6" fill="#f778ba">
+    <animateMotion dur="3.5s" begin="-1.75s" repeatCount="indefinite"><mpath href="#e4"/></animateMotion>
+  </circle>
+</svg>
