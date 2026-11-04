@@ -1,234 +1,246 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" shape-rendering="crispEdges">
-  <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0b1020"/>
-      <stop offset="1" stop-color="#1b2a44"/>
-    </linearGradient>
-    <pattern id="grass" width="12" height="12" patternUnits="userSpaceOnUse">
-      <rect width="12" height="12" fill="#2d5a27"/>
-      <rect x="2" y="3" width="2" height="2" fill="#3e7a35"/>
-      <rect x="8" y="8" width="2" height="2" fill="#24481f"/>
-    </pattern>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340">
 
-    <!-- Estructura común de un héroe pixel (pies en 0,0). El color del cuerpo es currentColor. -->
-    <g id="mage">
-      <rect x="-5" y="-8" width="4" height="8" fill="#2b2b3a"/>
-      <rect x="1" y="-8" width="4" height="8" fill="#2b2b3a"/>
-      <rect x="-7" y="-21" width="14" height="14" fill="currentColor"/>
-      <rect x="-10" y="-20" width="3" height="10" fill="currentColor"/>
-      <rect x="7" y="-20" width="3" height="10" fill="currentColor"/>
-      <rect x="-5" y="-31" width="10" height="10" fill="#f2c9a0"/>
-      <rect x="-3" y="-26" width="2" height="2" fill="#1a1a1a"/>
-      <rect x="1" y="-26" width="2" height="2" fill="#1a1a1a"/>
-      <polygon points="-9,-31 0,-55 9,-31" fill="currentColor"/>
-      <rect x="-10" y="-32" width="20" height="3" fill="currentColor"/>
-      <rect x="11" y="-42" width="2" height="40" fill="#8b5a2b"/>
-      <circle cx="12" cy="-44" r="3.5" fill="#79c0ff">
-        <animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/>
-      </circle>
-    </g>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0b1020"/>
+    <stop offset="1" stop-color="#1b2a44"/>
+  </linearGradient>
 
-    <g id="warrior">
-      <rect x="-5" y="-8" width="4" height="8" fill="#2b2b3a"/>
-      <rect x="1" y="-8" width="4" height="8" fill="#2b2b3a"/>
-      <rect x="-7" y="-21" width="14" height="14" fill="currentColor"/>
-      <rect x="-10" y="-20" width="3" height="10" fill="currentColor"/>
-      <rect x="7" y="-20" width="3" height="10" fill="currentColor"/>
-      <rect x="-5" y="-31" width="10" height="10" fill="#f2c9a0"/>
-      <rect x="-3" y="-26" width="2" height="2" fill="#1a1a1a"/>
-      <rect x="1" y="-26" width="2" height="2" fill="#1a1a1a"/>
-      <rect x="-6" y="-34" width="12" height="6" fill="#9aa4b2"/>
-      <rect x="-1" y="-41" width="2" height="7" fill="currentColor"/>
-      <rect x="12" y="-30" width="2" height="20" fill="#cfd8dc"/>
-      <rect x="10" y="-12" width="6" height="2" fill="#8b5a2b"/>
-    </g>
-
-    <g id="archer">
-      <rect x="-5" y="-8" width="4" height="8" fill="#2b2b3a"/>
-      <rect x="1" y="-8" width="4" height="8" fill="#2b2b3a"/>
-      <rect x="-7" y="-21" width="14" height="14" fill="currentColor"/>
-      <rect x="-10" y="-20" width="3" height="10" fill="currentColor"/>
-      <rect x="7" y="-20" width="3" height="10" fill="currentColor"/>
-      <rect x="-5" y="-31" width="10" height="10" fill="#f2c9a0"/>
-      <rect x="-3" y="-26" width="2" height="2" fill="#1a1a1a"/>
-      <rect x="1" y="-26" width="2" height="2" fill="#1a1a1a"/>
-      <polygon points="-7,-31 0,-40 7,-31" fill="currentColor"/>
-      <rect x="-6" y="-33" width="12" height="4" fill="currentColor"/>
-      <path d="M-15,-36 Q-22,-20 -15,-4" fill="none" stroke="#8b5a2b" stroke-width="2"/>
-      <line x1="-15" y1="-36" x2="-15" y2="-4" stroke="#e6e6e6" stroke-width="1"/>
-    </g>
-
-    <g id="paladin">
-      <rect x="-5" y="-8" width="4" height="8" fill="#2b2b3a"/>
-      <rect x="1" y="-8" width="4" height="8" fill="#2b2b3a"/>
-      <rect x="-7" y="-21" width="14" height="14" fill="currentColor"/>
-      <rect x="-10" y="-20" width="3" height="10" fill="currentColor"/>
-      <rect x="7" y="-20" width="3" height="10" fill="currentColor"/>
-      <rect x="-5" y="-31" width="10" height="10" fill="#f2c9a0"/>
-      <rect x="-3" y="-26" width="2" height="2" fill="#1a1a1a"/>
-      <rect x="1" y="-26" width="2" height="2" fill="#1a1a1a"/>
-      <rect x="-6" y="-35" width="12" height="7" fill="#cfd8dc"/>
-      <rect x="-1" y="-41" width="2" height="6" fill="currentColor"/>
-      <polygon points="-7,-20 -14,-3 -8,-2 -5,-14" fill="currentColor" opacity="0.8"/>
-      <rect x="-17" y="-19" width="7" height="10" rx="2" fill="currentColor" stroke="#cfd8dc" stroke-width="1"/>
-    </g>
-  </defs>
-
-  <!-- Cielo -->
-  <rect width="900" height="300" rx="16" fill="url(#sky)"/>
-
-  <!-- Estrellas parpadeando -->
-  <g fill="#e6edf3">
-    <rect x="60" y="30" width="2" height="2"><animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/></rect>
-    <rect x="200" y="60" width="2" height="2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/></rect>
-    <rect x="330" y="25" width="2" height="2"><animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/></rect>
-    <rect x="520" y="55" width="2" height="2"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></rect>
-    <rect x="700" y="28" width="2" height="2"><animate attributeName="opacity" values="1;0.4;1" dur="3.4s" repeatCount="indefinite"/></rect>
-    <rect x="850" y="70" width="2" height="2"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.8s" repeatCount="indefinite"/></rect>
+  <g id="mage">
+    <rect x="-5" y="-8" width="4" height="8" fill="#2b2b3a"/>
+    <rect x="1" y="-8" width="4" height="8" fill="#2b2b3a"/>
+    <rect x="-7" y="-21" width="14" height="14" fill="currentColor"/>
+    <rect x="-10" y="-20" width="3" height="10" fill="currentColor"/>
+    <rect x="7" y="-20" width="3" height="10" fill="currentColor"/>
+    <rect x="-5" y="-31" width="10" height="10" fill="#f2c9a0"/>
+    <rect x="-3" y="-26" width="2" height="2" fill="#1a1a1a"/>
+    <rect x="1" y="-26" width="2" height="2" fill="#1a1a1a"/>
+    <polygon points="-9,-31 0,-55 9,-31" fill="currentColor"/>
+    <rect x="-10" y="-32" width="20" height="3" fill="currentColor"/>
+    <rect x="11" y="-42" width="2" height="40" fill="#8b5a2b"/>
+    <circle cx="12" cy="-44" r="3.5" fill="#79c0ff"><animate attributeName="opacity" values="1;0.35;1" dur="1.6s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Luna -->
-  <circle cx="800" cy="50" r="16" fill="#f4e4a6"/>
-  <circle cx="806" cy="46" r="14" fill="#1b2a44"/>
-
-  <!-- Nubes deslizándose -->
-  <g fill="#2a3a55" opacity="0.7">
-    <g>
-      <animateTransform attributeName="transform" type="translate" values="-120,0;1000,0" dur="70s" repeatCount="indefinite"/>
-      <ellipse cx="60" cy="90" rx="34" ry="10"/>
-      <ellipse cx="78" cy="84" rx="22" ry="9"/>
-    </g>
-    <g>
-      <animateTransform attributeName="transform" type="translate" values="1000,0;-120,0" dur="90s" repeatCount="indefinite"/>
-      <ellipse cx="300" cy="110" rx="40" ry="11"/>
-      <ellipse cx="322" cy="104" rx="24" ry="10"/>
-    </g>
+  <g id="warrior">
+    <rect x="-5" y="-8" width="4" height="8" fill="#2b2b3a"/>
+    <rect x="1" y="-8" width="4" height="8" fill="#2b2b3a"/>
+    <rect x="-7" y="-21" width="14" height="14" fill="currentColor"/>
+    <rect x="-10" y="-20" width="3" height="10" fill="currentColor"/>
+    <rect x="7" y="-20" width="3" height="10" fill="currentColor"/>
+    <rect x="-5" y="-31" width="10" height="10" fill="#f2c9a0"/>
+    <rect x="-3" y="-26" width="2" height="2" fill="#1a1a1a"/>
+    <rect x="1" y="-26" width="2" height="2" fill="#1a1a1a"/>
+    <rect x="-6" y="-34" width="12" height="6" fill="#9aa4b2"/>
+    <rect x="-1" y="-41" width="2" height="7" fill="currentColor"/>
+    <rect x="12" y="-30" width="2" height="20" fill="#cfd8dc"/>
+    <rect x="10" y="-12" width="6" height="2" fill="#8b5a2b"/>
   </g>
 
-  <!-- Suelo con pasto -->
-  <rect x="0" y="240" width="900" height="60" fill="url(#grass)"/>
-
-  <!-- Camino de tierra -->
-  <rect x="0" y="236" width="900" height="16" fill="#7a5230"/>
-  <rect x="0" y="236" width="900" height="2" fill="#94653a"/>
-
-  <!-- Casa izquierda -->
-  <g>
-    <rect x="40" y="168" width="80" height="72" fill="#6b4f3a"/>
-    <polygon points="32,170 80,128 128,170" fill="#8b2e2e"/>
-    <rect x="66" y="206" width="18" height="34" fill="#3b2a1e"/>
-    <rect x="48" y="186" width="12" height="12" fill="#ffd166">
-      <animate attributeName="opacity" values="1;0.6;1" dur="1.8s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="94" y="186" width="12" height="12" fill="#ffd166">
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="2.3s" repeatCount="indefinite"/>
-    </rect>
+  <g id="archer">
+    <rect x="-5" y="-8" width="4" height="8" fill="#2b2b3a"/>
+    <rect x="1" y="-8" width="4" height="8" fill="#2b2b3a"/>
+    <rect x="-7" y="-21" width="14" height="14" fill="currentColor"/>
+    <rect x="-10" y="-20" width="3" height="10" fill="currentColor"/>
+    <rect x="7" y="-20" width="3" height="10" fill="currentColor"/>
+    <rect x="-5" y="-31" width="10" height="10" fill="#f2c9a0"/>
+    <rect x="-3" y="-26" width="2" height="2" fill="#1a1a1a"/>
+    <rect x="1" y="-26" width="2" height="2" fill="#1a1a1a"/>
+    <polygon points="-7,-31 0,-40 7,-31" fill="currentColor"/>
+    <rect x="-6" y="-33" width="12" height="4" fill="currentColor"/>
+    <path d="M-15,-36 Q-22,-20 -15,-4" fill="none" stroke="#8b5a2b" stroke-width="2"/>
+    <line x1="-15" y1="-36" x2="-15" y2="-4" stroke="#e6e6e6" stroke-width="1"/>
   </g>
 
-  <!-- Casa derecha -->
-  <g>
-    <rect x="780" y="168" width="80" height="72" fill="#5b4a3a"/>
-    <polygon points="772,170 820,128 868,170" fill="#2e5b8b"/>
-    <rect x="806" y="206" width="18" height="34" fill="#3b2a1e"/>
-    <rect x="788" y="186" width="12" height="12" fill="#ffd166">
-      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="834" y="186" width="12" height="12" fill="#ffd166">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2.6s" repeatCount="indefinite"/>
-    </rect>
+  <g id="paladin">
+    <rect x="-5" y="-8" width="4" height="8" fill="#2b2b3a"/>
+    <rect x="1" y="-8" width="4" height="8" fill="#2b2b3a"/>
+    <rect x="-7" y="-21" width="14" height="14" fill="currentColor"/>
+    <rect x="-10" y="-20" width="3" height="10" fill="currentColor"/>
+    <rect x="7" y="-20" width="3" height="10" fill="currentColor"/>
+    <rect x="-5" y="-31" width="10" height="10" fill="#f2c9a0"/>
+    <rect x="-3" y="-26" width="2" height="2" fill="#1a1a1a"/>
+    <rect x="1" y="-26" width="2" height="2" fill="#1a1a1a"/>
+    <rect x="-6" y="-35" width="12" height="7" fill="#cfd8dc"/>
+    <rect x="-1" y="-41" width="2" height="6" fill="currentColor"/>
+    <polygon points="-7,-20 -14,-3 -8,-2 -5,-14" fill="currentColor" opacity="0.8"/>
+    <rect x="-17" y="-19" width="7" height="10" rx="2" fill="currentColor" stroke="#cfd8dc" stroke-width="1"/>
   </g>
-
-  <!-- Árboles -->
-  <g>
-    <rect x="266" y="190" width="8" height="50" fill="#5b3a1e"/>
-    <circle cx="270" cy="176" r="22" fill="#2e7d32"/>
-    <circle cx="256" cy="186" r="14" fill="#388e3c"/>
-    <circle cx="284" cy="186" r="14" fill="#2b6e2e"/>
-  </g>
-  <g>
-    <rect x="636" y="190" width="8" height="50" fill="#5b3a1e"/>
-    <circle cx="640" cy="176" r="22" fill="#2e7d32"/>
-    <circle cx="626" cy="186" r="14" fill="#388e3c"/>
-    <circle cx="654" cy="186" r="14" fill="#2b6e2e"/>
-  </g>
-
-  <!-- Antorchas que parpadean -->
-  <ellipse cx="128" cy="200" rx="3" ry="5" fill="#ff9f1c">
-    <animate attributeName="ry" values="5;3;6;4;5" dur="0.9s" repeatCount="indefinite"/>
-  </ellipse>
-  <ellipse cx="812" cy="200" rx="3" ry="5" fill="#ff9f1c">
-    <animate attributeName="ry" values="4;6;3;5;4" dur="1.1s" repeatCount="indefinite"/>
-  </ellipse>
-
-  <!-- Título -->
-  <text x="450" y="38" text-anchor="middle" font-family="Courier New, monospace" font-size="20" font-weight="bold" fill="#58a6ff">Gremio de Agentes</text>
-
-  <!-- Rutas de comunicación (arcos tenues) -->
-  <g fill="none" stroke="#3b4a63" stroke-width="1.5" stroke-dasharray="4 5">
-    <path id="r1" d="M170,190 Q270,120 370,190"/>
-    <path id="r2" d="M370,190 Q465,120 560,190"/>
-    <path id="r3" d="M560,190 Q665,120 760,190"/>
-  </g>
-
-  <!-- Mensajes (orbes dorados) viajando entre héroes -->
-  <circle r="4" fill="#ffd166">
-    <animateMotion dur="3s" repeatCount="indefinite" path="M170,190 Q270,120 370,190"/>
+</defs>
+<rect width="900" height="340" rx="16" fill="url(#sky)"/>
+<rect x="351" y="37" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.3s" repeatCount="indefinite"/></rect>
+<rect x="69" y="27" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></rect>
+<rect x="116" y="64" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></rect>
+<rect x="539" y="45" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.7s" repeatCount="indefinite"/></rect>
+<rect x="464" y="71" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.7s" repeatCount="indefinite"/></rect>
+<rect x="112" y="88" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/></rect>
+<rect x="866" y="90" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></rect>
+<rect x="248" y="92" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" repeatCount="indefinite"/></rect>
+<rect x="610" y="92" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.3s" repeatCount="indefinite"/></rect>
+<rect x="246" y="23" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></rect>
+<rect x="156" y="55" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/></rect>
+<rect x="573" y="33" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></rect>
+<rect x="593" y="41" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/></rect>
+<rect x="604" y="42" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.3s" repeatCount="indefinite"/></rect>
+<rect x="580" y="26" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></rect>
+<rect x="653" y="44" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/></rect>
+<rect x="564" y="72" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.0s" repeatCount="indefinite"/></rect>
+<rect x="496" y="92" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.3s" repeatCount="indefinite"/></rect>
+<rect x="390" y="56" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.0s" repeatCount="indefinite"/></rect>
+<rect x="204" y="49" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.7s" repeatCount="indefinite"/></rect>
+<rect x="327" y="85" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/></rect>
+<rect x="371" y="75" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite"/></rect>
+<rect x="94" y="33" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/></rect>
+<rect x="188" y="61" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite"/></rect>
+<rect x="520" y="71" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.7s" repeatCount="indefinite"/></rect>
+<rect x="704" y="27" width="2" height="2" fill="#e6edf3"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.0s" repeatCount="indefinite"/></rect>
+<circle cx="820" cy="48" r="16" fill="#f4e4a6"/><circle cx="826" cy="44" r="14" fill="#1b2a44"/>
+<g fill="#2a3a55" opacity="0.6">
+  <g><animateTransform attributeName="transform" type="translate" values="-120,0;1000,0" dur="80s" repeatCount="indefinite"/>
+    <ellipse cx="60" cy="78" rx="34" ry="9"/><ellipse cx="78" cy="72" rx="22" ry="8"/></g>
+  <g><animateTransform attributeName="transform" type="translate" values="1000,0;-120,0" dur="100s" repeatCount="indefinite"/>
+    <ellipse cx="300" cy="62" rx="40" ry="10"/><ellipse cx="322" cy="56" rx="24" ry="9"/></g>
+</g>
+<text x="450" y="34" text-anchor="middle" font-family="Courier New, monospace" font-size="20" font-weight="bold" fill="#58a6ff">Gremio de Agentes</text>
+<polygon points="258.0,190.0 482.0,302.0 482.0,316.0 258.0,204.0" fill="#2e2117" />
+<polygon points="642.0,222.0 482.0,302.0 482.0,316.0 642.0,236.0" fill="#3b2a1e" />
+<polygon points="418.0,110.0 450.0,126.0 418.0,142.0 386.0,126.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="386.0,126.0 418.0,142.0 386.0,158.0 354.0,142.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="354.0,142.0 386.0,158.0 354.0,174.0 322.0,158.0" fill="#7a5230" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="322.0,158.0 354.0,174.0 322.0,190.0 290.0,174.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="290.0,174.0 322.0,190.0 290.0,206.0 258.0,190.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="450.0,126.0 482.0,142.0 450.0,158.0 418.0,142.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="418.0,142.0 450.0,158.0 418.0,174.0 386.0,158.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="386.0,158.0 418.0,174.0 386.0,190.0 354.0,174.0" fill="#6b4527" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="354.0,174.0 386.0,190.0 354.0,206.0 322.0,190.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="322.0,190.0 354.0,206.0 322.0,222.0 290.0,206.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="482.0,142.0 514.0,158.0 482.0,174.0 450.0,158.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="450.0,158.0 482.0,174.0 450.0,190.0 418.0,174.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="418.0,174.0 450.0,190.0 418.0,206.0 386.0,190.0" fill="#7a5230" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="386.0,190.0 418.0,206.0 386.0,222.0 354.0,206.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="354.0,206.0 386.0,222.0 354.0,238.0 322.0,222.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="514.0,158.0 546.0,174.0 514.0,190.0 482.0,174.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="482.0,174.0 514.0,190.0 482.0,206.0 450.0,190.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="450.0,190.0 482.0,206.0 450.0,222.0 418.0,206.0" fill="#6b4527" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="418.0,206.0 450.0,222.0 418.0,238.0 386.0,222.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="386.0,222.0 418.0,238.0 386.0,254.0 354.0,238.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="546.0,174.0 578.0,190.0 546.0,206.0 514.0,190.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="514.0,190.0 546.0,206.0 514.0,222.0 482.0,206.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="482.0,206.0 514.0,222.0 482.0,238.0 450.0,222.0" fill="#7a5230" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="450.0,222.0 482.0,238.0 450.0,254.0 418.0,238.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="418.0,238.0 450.0,254.0 418.0,270.0 386.0,254.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="578.0,190.0 610.0,206.0 578.0,222.0 546.0,206.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="546.0,206.0 578.0,222.0 546.0,238.0 514.0,222.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="514.0,222.0 546.0,238.0 514.0,254.0 482.0,238.0" fill="#6b4527" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="482.0,238.0 514.0,254.0 482.0,270.0 450.0,254.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="450.0,254.0 482.0,270.0 450.0,286.0 418.0,270.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="610.0,206.0 642.0,222.0 610.0,238.0 578.0,222.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="578.0,222.0 610.0,238.0 578.0,254.0 546.0,238.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="546.0,238.0 578.0,254.0 546.0,270.0 514.0,254.0" fill="#7a5230" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="514.0,254.0 546.0,270.0 514.0,286.0 482.0,270.0" fill="#367030" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="482.0,270.0 514.0,286.0 482.0,302.0 450.0,286.0" fill="#3e7a35" stroke="#24481f" stroke-width="0.6"/>
+<polygon points="354.0,151.6 418.0,183.6 418.0,159.6 354.0,127.6" fill="#a88c5c" />
+<polygon points="482.0,151.6 418.0,183.6 418.0,159.6 482.0,127.6" fill="#c2a673" />
+<polygon points="418.0,95.6 482.0,127.6 418.0,159.6 354.0,127.6" fill="#d8c49a" />
+<polygon points="380.2,164.7 391.8,170.5 391.8,161.4 380.2,155.6" fill="#3b2a1e" />
+<polygon points="363.6,145.6 374.8,151.2 374.8,144.0 363.6,138.4" fill="#ffd166"><animate attributeName="opacity" values="1;0.55;1" dur="2.4s" repeatCount="indefinite"/></polygon>
+<polygon points="397.2,162.4 408.4,168.0 408.4,160.8 397.2,155.2" fill="#ffd166"><animate attributeName="opacity" values="1;0.55;1" dur="3s" repeatCount="indefinite"/></polygon>
+<polygon points="344.4,127.6 418.0,164.4 418.0,109.6" fill="#a33b3b" />
+<polygon points="491.6,127.6 418.0,164.4 418.0,109.6" fill="#7a2a2a" />
+<polygon points="491.6,220.4 555.6,252.4 555.6,230.4 491.6,198.4" fill="#a88c5c" />
+<polygon points="619.6,220.4 555.6,252.4 555.6,230.4 619.6,198.4" fill="#c2a673" />
+<polygon points="555.6,166.4 619.6,198.4 555.6,230.4 491.6,198.4" fill="#d8c49a" />
+<polygon points="517.8,233.5 529.4,239.3 529.4,230.9 517.8,225.2" fill="#3b2a1e" />
+<polygon points="501.2,215.3 512.4,220.9 512.4,214.3 501.2,208.7" fill="#ffd166"><animate attributeName="opacity" values="1;0.55;1" dur="2.4s" repeatCount="indefinite"/></polygon>
+<polygon points="534.8,232.1 546.0,237.7 546.0,231.1 534.8,225.5" fill="#ffd166"><animate attributeName="opacity" values="1;0.55;1" dur="3s" repeatCount="indefinite"/></polygon>
+<polygon points="482.0,198.4 555.6,235.2 555.6,180.4" fill="#a33b3b" />
+<polygon points="629.2,198.4 555.6,235.2 555.6,180.4" fill="#7a2a2a" />
+<polygon points="467.9,169.2 472.4,171.4 472.4,157.4 467.9,155.2" fill="#4a2f16" />
+<polygon points="476.9,169.2 472.4,171.4 472.4,157.4 476.9,155.2" fill="#5b3a1e" />
+<polygon points="472.4,153.0 476.9,155.2 472.4,157.4 467.9,155.2" fill="#7a4e26" />
+<ellipse cx="472.4" cy="143.2" rx="20" ry="17" fill="#2e7d32"/><ellipse cx="466.4" cy="138.2" rx="9" ry="7" fill="#43a047" opacity="0.75"/>
+<polygon points="279.1,190.0 283.6,192.2 283.6,178.2 279.1,176.0" fill="#4a2f16" />
+<polygon points="288.1,190.0 283.6,192.2 283.6,178.2 288.1,176.0" fill="#5b3a1e" />
+<polygon points="283.6,173.8 288.1,176.0 283.6,178.2 279.1,176.0" fill="#7a4e26" />
+<ellipse cx="283.6" cy="164.0" rx="20" ry="17" fill="#2e7d32"/><ellipse cx="277.6" cy="159.0" rx="9" ry="7" fill="#43a047" opacity="0.75"/>
+<polygon points="538.3,262.0 542.8,264.2 542.8,250.2 538.3,248.0" fill="#4a2f16" />
+<polygon points="547.3,262.0 542.8,264.2 542.8,250.2 547.3,248.0" fill="#5b3a1e" />
+<polygon points="542.8,245.8 547.3,248.0 542.8,250.2 538.3,248.0" fill="#7a4e26" />
+<ellipse cx="542.8" cy="236.0" rx="20" ry="17" fill="#2e7d32"/><ellipse cx="536.8" cy="231.0" rx="9" ry="7" fill="#43a047" opacity="0.75"/>
+<polygon points="509.5,177.2 514.0,179.4 514.0,165.4 509.5,163.2" fill="#4a2f16" />
+<polygon points="518.5,177.2 514.0,179.4 514.0,165.4 518.5,163.2" fill="#5b3a1e" />
+<polygon points="514.0,161.0 518.5,163.2 514.0,165.4 509.5,163.2" fill="#7a4e26" />
+<ellipse cx="514.0" cy="151.2" rx="20" ry="17" fill="#2e7d32"/><ellipse cx="508.0" cy="146.2" rx="9" ry="7" fill="#43a047" opacity="0.75"/>
+<polygon points="309.2,183.6 334.8,196.4 334.8,184.4 309.2,171.6" fill="#3d3163" />
+<polygon points="360.4,183.6 334.8,196.4 334.8,184.4 360.4,171.6" fill="#4a3d75" />
+<polygon points="334.8,158.8 360.4,171.6 334.8,184.4 309.2,171.6" fill="#5b4a8a" />
+<g opacity="0.9">
+  <g><animateTransform attributeName="transform" type="rotate" values="0 334.8 149.6;360 334.8 149.6" dur="6s" repeatCount="indefinite"/>
+    <ellipse cx="334.8" cy="149.6" rx="24" ry="9" fill="none" stroke="#79c0ff" stroke-width="1.5"/></g>
+  <g><animateTransform attributeName="transform" type="rotate" values="360 334.8 149.6;0 334.8 149.6" dur="4s" repeatCount="indefinite"/>
+    <ellipse cx="334.8" cy="149.6" rx="16" ry="6" fill="none" stroke="#a5d6ff" stroke-width="1"/></g>
+  <circle cx="334.8" cy="145.6" r="3" fill="#79c0ff">
+    <animate attributeName="cy" values="145.6;140.6;145.6" dur="2s" repeatCount="indefinite"/>
   </circle>
-  <circle r="4" fill="#ffd166">
-    <animateMotion dur="3.4s" begin="-1s" repeatCount="indefinite" path="M370,190 Q465,120 560,190"/>
-  </circle>
-  <circle r="4" fill="#ffd166">
-    <animateMotion dur="3s" begin="-0.5s" repeatCount="indefinite" path="M560,190 Q665,120 760,190"/>
-  </circle>
-
-  <!-- Planner: Mago (azul), camina de lado a lado -->
-  <g transform="translate(170,240)">
-    <g>
-      <animateMotion dur="9s" repeatCount="indefinite" path="M-60,0 L60,0 L-60,0"/>
-      <g>
-        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="0.6s" repeatCount="indefinite"/>
-        <use href="#mage" color="#58a6ff"/>
-        <text x="0" y="-62" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#c9d1d9">Planner · Mago</text>
-      </g>
-    </g>
+</g>
+<polygon points="405.2,199.6 437.2,215.6 437.2,205.6 405.2,189.6" fill="#6e4a28" />
+<polygon points="450.0,209.2 437.2,215.6 437.2,205.6 450.0,199.2" fill="#835a31" />
+<polygon points="418.0,183.2 450.0,199.2 437.2,205.6 405.2,189.6" fill="#9c6b3c" />
+<polygon points="425.7,189.0 438.5,195.4 438.5,183.4 425.7,177.0" fill="#1a1d26" />
+<polygon points="440.4,194.4 438.5,195.4 438.5,183.4 440.4,182.4" fill="#22262f" />
+<polygon points="427.6,176.0 440.4,182.4 438.5,183.4 425.7,177.0" fill="#2b2f3a" />
+<polygon points="427.3,187.8 436.9,192.6 436.9,184.6 427.3,179.8" fill="#58a6ff"><animate attributeName="opacity" values="1;0.55;1" dur="1.2s" repeatCount="indefinite"/></polygon>
+<text x="440.4" y="166.0" text-anchor="middle" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#3fb950">{ }<animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/></text>
+<polygon points="427.6,233.2 450.0,244.4 450.0,230.4 427.6,219.2" fill="#5c5038" />
+<polygon points="472.4,233.2 450.0,244.4 450.0,230.4 472.4,219.2" fill="#6e6043" />
+<polygon points="450.0,208.0 472.4,219.2 450.0,230.4 427.6,219.2" fill="#8a7a5c" />
+<text x="450.0" y="207.2" text-anchor="middle" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#3fb950">✓<animate attributeName="opacity" values="0;1;1;0" dur="2.4s" repeatCount="indefinite"/></text>
+<polygon points="482.0,257.2 501.2,266.8 501.2,254.8 482.0,245.2" fill="#3a404b" />
+<polygon points="520.4,257.2 501.2,266.8 501.2,254.8 520.4,245.2" fill="#4a505c" />
+<polygon points="501.2,235.6 520.4,245.2 501.2,254.8 482.0,245.2" fill="#5a6270" />
+<circle cx="493.2" cy="237.2" r="1.8" fill="#ffd166"><animate attributeName="opacity" values="0;1;0" dur="1.1s" repeatCount="indefinite"/><animate attributeName="cy" values="237.2;231.2" dur="1.1s" repeatCount="indefinite"/></circle>
+<circle cx="507.2" cy="234.2" r="1.8" fill="#ffd166"><animate attributeName="opacity" values="0;1;0" dur="1.4s" repeatCount="indefinite"/><animate attributeName="cy" values="234.2;228.2" dur="1.4s" repeatCount="indefinite"/></circle>
+<circle cx="503.2" cy="231.2" r="1.8" fill="#ffd166"><animate attributeName="opacity" values="0;1;0" dur="0.9s" repeatCount="indefinite"/><animate attributeName="cy" values="231.2;225.2" dur="0.9s" repeatCount="indefinite"/></circle>
+<g fill="none" stroke="#3b4a63" stroke-width="1.5" stroke-dasharray="4 5"><path d="M306.0,152.0 Q355.6,104.8 405.2,169.6"/><path d="M405.2,169.6 Q410.8,130.8 416.4,204.0"/><path d="M416.4,204.0 Q442.8,159.6 469.2,227.2"/></g>
+<circle r="4" fill="#ffd166"><animateMotion dur="3s" begin="-0s" repeatCount="indefinite" path="M306.0,152.0 Q355.6,104.8 405.2,169.6"/></circle>
+<circle r="4" fill="#ffd166"><animateMotion dur="3s" begin="-1s" repeatCount="indefinite" path="M405.2,169.6 Q410.8,130.8 416.4,204.0"/></circle>
+<circle r="4" fill="#ffd166"><animateMotion dur="3s" begin="-2s" repeatCount="indefinite" path="M416.4,204.0 Q442.8,159.6 469.2,227.2"/></circle>
+<g transform="translate(306.0,198.0)">
+  <ellipse cx="0" cy="0" rx="13" ry="5" fill="#000" opacity="0.35"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-1.5;0,0" dur="0.8s" repeatCount="indefinite"/>
+    <use href="#mage" color="#58a6ff"/>
+    
   </g>
-
-  <!-- Coder: Guerrero (verde), camina con un "!" de misión -->
-  <g transform="translate(370,240)">
-    <g>
-      <animateMotion dur="6s" repeatCount="indefinite" path="M-40,0 L40,0 L-40,0"/>
-      <g>
-        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="0.5s" repeatCount="indefinite"/>
-        <use href="#warrior" color="#3fb950"/>
-        <text x="0" y="-74" text-anchor="middle" font-family="Courier New, monospace" font-size="16" font-weight="bold" fill="#ffd166">!
-          <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
-        </text>
-        <text x="0" y="-62" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#c9d1d9">Coder · Guerrero</text>
-      </g>
-    </g>
+</g>
+<g transform="translate(405.2,215.6)">
+  <ellipse cx="0" cy="0" rx="13" ry="5" fill="#000" opacity="0.35"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-1.5;0,0" dur="0.5s" repeatCount="indefinite"/>
+    <use href="#warrior" color="#3fb950"/>
+    <rect x="-9" y="-15" width="3" height="3" fill="#ffdbb0"><animate attributeName="y" values="-15;-12;-15" dur="0.35s" repeatCount="indefinite"/></rect><rect x="6" y="-12" width="3" height="3" fill="#ffdbb0"><animate attributeName="y" values="-12;-15;-12" dur="0.35s" repeatCount="indefinite"/></rect>
   </g>
-
-  <!-- Tester: Arquero (amarillo), patrulla rápido -->
-  <g transform="translate(560,240)">
-    <g>
-      <animateMotion dur="5s" repeatCount="indefinite" path="M-70,0 L70,0 L-70,0"/>
-      <g>
-        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="0.4s" repeatCount="indefinite"/>
-        <use href="#archer" color="#d29922"/>
-        <text x="0" y="-52" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#c9d1d9">Tester · Arquero</text>
-      </g>
-    </g>
+</g>
+<g transform="translate(416.4,250.0)">
+  <ellipse cx="0" cy="0" rx="13" ry="5" fill="#000" opacity="0.35"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-1.5;0,0" dur="0.4s" repeatCount="indefinite"/>
+    <use href="#archer" color="#d29922"/>
+    <g><animateTransform attributeName="transform" type="translate" values="0,0;-2,-3;0,0" dur="1.6s" repeatCount="indefinite"/><circle cx="13" cy="-18" r="4" fill="none" stroke="#cfd8dc" stroke-width="1.5"/><line x1="16" y1="-15" x2="19" y2="-11" stroke="#8b5a2b" stroke-width="2"/></g>
   </g>
-
-  <!-- Deploy: Paladín (rosa), patrulla cerca del pueblo -->
-  <g transform="translate(760,240)">
-    <g>
-      <animateMotion dur="8s" repeatCount="indefinite" path="M-40,0 L40,0 L-40,0"/>
-      <g>
-        <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="0.7s" repeatCount="indefinite"/>
-        <use href="#paladin" color="#f778ba"/>
-        <text x="0" y="-62" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#c9d1d9">Deploy · Paladín</text>
-      </g>
-    </g>
+</g>
+<g transform="translate(469.2,273.2)">
+  <ellipse cx="0" cy="0" rx="13" ry="5" fill="#000" opacity="0.35"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-1.5;0,0" dur="0.7s" repeatCount="indefinite"/>
+    <use href="#paladin" color="#f778ba"/>
+    <g><animateTransform attributeName="transform" type="rotate" values="-50 10 -22;25 10 -22;-50 10 -22" dur="1s" repeatCount="indefinite"/><rect x="7" y="-30" width="9" height="5" fill="#9aa4b2"/><rect x="9.5" y="-25" width="2" height="18" fill="#8b5a2b"/></g>
   </g>
+</g>
+<ellipse cx="418.0" cy="180.8" rx="3" ry="5" fill="#ff9f1c"><animate attributeName="ry" values="5;3;6;4;5" dur="0.9s" repeatCount="indefinite"/></ellipse>
+<ellipse cx="485.2" cy="214.4" rx="3" ry="5" fill="#ff9f1c"><animate attributeName="ry" values="5;3;6;4;5" dur="0.9s" repeatCount="indefinite"/></ellipse>
+<rect x="20" y="314" width="860" height="16" rx="8" fill="#0d1117" opacity="0.75"/>
+<circle cx="92" cy="322" r="5" fill="#58a6ff"/><text x="102" y="326" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#58a6ff">Planner</text><text x="172" y="326" font-family="Courier New, monospace" font-size="12" fill="#c9d1d9">Mago</text>
+<circle cx="282" cy="322" r="5" fill="#3fb950"/><text x="292" y="326" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#3fb950">Coder</text><text x="362" y="326" font-family="Courier New, monospace" font-size="12" fill="#c9d1d9">Guerrero</text>
+<circle cx="482" cy="322" r="5" fill="#d29922"/><text x="492" y="326" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#d29922">Tester</text><text x="562" y="326" font-family="Courier New, monospace" font-size="12" fill="#c9d1d9">Arquero</text>
+<circle cx="682" cy="322" r="5" fill="#f778ba"/><text x="692" y="326" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#f778ba">Deploy</text><text x="762" y="326" font-family="Courier New, monospace" font-size="12" fill="#c9d1d9">Paladín</text>
 </svg>
