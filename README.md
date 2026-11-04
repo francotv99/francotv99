@@ -2,7 +2,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=58A6FF&center=true&vCenter=true&width=650&lines=Hola%2C+soy+Franco+%F0%9F%91%8B;Desarrollador+de+software;Construyo+agentes+e+ideas+con+IA;Siempre+aprendiendo+algo+nuevo" alt="Typing SVG" />
 
-<img src="./assets/agents.svg" alt="Equipo de agentes en movimiento" width="100%" />
+<img src="https://raw.githubusercontent.com/francotv99/francotv99/main/assets/agents.svg?v=2" alt="Equipo de agentes en movimiento" width="100%" />
 
 | Agente | Rol |
 |:---:|---|
