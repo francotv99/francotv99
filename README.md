@@ -17,21 +17,40 @@
 
 ## 🧠 Sobre mí
 
-- 🔭 Trabajo en proyectos personales y experimentos con **agentes de IA**
-- 🌱 Aprendiendo: *(completa aquí lo que estés aprendiendo)*
-- 💬 Pregúntame sobre: *(tus temas fuertes)*
-- 📫 Contacto: *(email o LinkedIn)*
+- 🤖 Ingeniero de software enfocado en **agentes de IA**: diseño plataformas donde los LLM orquestan tareas reales con LangChain, LangGraph y n8n
+- 🏗️ Construí una plataforma SaaS multi-tenant de orquestación de agentes: **+35% de productividad** y **−28% en costos operativos**
+- ⚡ Me interesa que la IA llegue a producción: backends escalables, eventos asíncronos y sistemas en tiempo real
+- 🌱 Profundizando en: coordinación entre agentes (LangGraph) y automatización de punta a punta con n8n
+- 💬 Pregúntame sobre: integrar LLM en backends, orquestar agentes y arquitecturas con FastAPI, Redis y AWS
+- 📫 Contacto: [LinkedIn](https://www.linkedin.com/in/francostv)
 
 ## 🛠️ Stack
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+**IA y automatización**
 
-*(Quita o añade tecnologías según lo que realmente uses.)*
+![LangChain](https://img.shields.io/badge/-LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/-LangGraph-1C3C3C?style=flat-square&logoColor=white)
+![n8n](https://img.shields.io/badge/-n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
+![OpenAI](https://img.shields.io/badge/-LLM%20Integration-412991?style=flat-square&logo=openai&logoColor=white)
+
+**Backend y datos**
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+
+**Frontend, cloud y DevOps**
+
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![AWS](https://img.shields.io/badge/-AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 
 ## 🚀 Proyectos destacados
 
